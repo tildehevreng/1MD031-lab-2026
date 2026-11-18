@@ -1,1 +1,109 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <title>Page title shown in window title</title>
+       <meta charset="utf-8"/>
+   </head>
+   <body style="background-color: #ffc1dd;">
+    <header>
+        <h1>Välkommen till Tildurs Burgir</h1>
+    </header>
+    <nav> Menu items </nav>
+    <main>
+        <section>
+            <h2> Välj burgare</h2>
+            <p>Välj burgare från menyn nedan</p>
+            <div style="display: inline-block; vertical-align: top; margin-right: 60px;">
+                <h3>Super smached burger</h3>
+                <img src="/img/smash-burger.jpg" alt="Super smached burger" style="width: 200px; height: 200px; object-fit: cover;">
+                <ul>
+                     <li> Smashed cheddar tryffel burger </li>
+                    <li>800 kcal</li>
+                    <li>Massa ost och laktos</li>
+                    <li>Innehåller gluten</li>
+                </ul>
+            </div>
+
+            <div style="display: inline-block; vertical-align: top; margin-right: 60px;">
+                <h3>Vegan burgare</h3>
+                <img src="/img/vegan-burger.jpg" alt="Vegan burgare" style="width: 200px; height: 200px; object-fit: cover;">
+                <ul>
+                    <li>Vegansk hamburgare</li>
+                    <li>400 kcal</li>
+                    <li>Innehåller soja</li>
+                    <li>Innehåller gluten</li>
+                </ul>
+            </div>
+
+            <div style="display: inline-block; vertical-align: top; margin-right: 60px;">
+                <h3>Tasty burger</h3>
+                <img src="/img/tasty-burger.jpg" alt="Tasty burger" style="width: 200px; height: 200px; object-fit: cover;">
+                <ul>
+                    <li>Vanlig hamburgare</li>
+                    <li>600 kcal</li>
+                    <li>Innehåller spår av kött</li>
+                    <li>Innehåller gluten</li>
+                </ul>
+        </section>
+
+        <section id="contact">
+            <h2> Kundinformation</h2>
+            <p>Fyll i din form krävs för hemleverans nedan</p>
+            <form>
+                <h3>Leveransinformation:</h3>
+                <p>
+                    <label for="fullname">Namn</label><br>
+                    <input type="text" id="fullname" name="fn" required="required" placeholder="Fullständigt namn">
+                </p>
+                
+                <p>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                    </p>
+
+                 <p>
+                    <label for="adress">Adress</label><br>
+                    <input type="text" id="adress" name="ad" placeholder="Gatuadress">
+                </p>
+
+                 <p>
+                    <label for="city">Postort</label><br>
+                    <input type="text" id="city" name="ct" placeholder="Postnummer och stad">
+                </p>
+
+                <p>
+                    <label for="payment">Betalningsmetod</label><br>
+                    <select id="payment" name="pm">
+                        <option value="swish" selected="selected">Swish</option>
+                        <option value="card">Bankkort</option>
+                        <option value="klarna">Klarnas</option>
+                        <option value="applepay">Apple Pay</option>
+                    </select>
+                </p>
+
+                <p>Kön:<br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Man</label><br>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Kvinna</label><br>
+
+                    <input type="radio" id="hen" name="gender" value="hen">
+                    <label for="hen">Annat</label><br>
+
+                    <input type="radio" id="undisclosed" name="gender" value="undisclosed" checked="checked">
+                    <label for="undisclosed">Vill ej ange</label>
+                </p>
+            </form>
+        </section>
+        <button type="submit">
+            <img src="/img/order-icon.jpg" alt="Skicka" style="width: 20px;">
+            Skicka beställning
+        </button>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; 2026 TildurBurgir Online</p>
+    </footer>
+    </body>
+</html>
