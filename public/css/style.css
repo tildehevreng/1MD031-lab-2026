@@ -1,18 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@700&display=swap');
 body {
-    font-size: 12pt;
+    font-family:"Georgia", serif;
+    font-size: 18px;
+}
+.allergen {
+    font-weight: bold;
+}
+#burgers {
+    background-color: rgb(1, 1, 1);
+    color: rgb(250, 248, 248);
+    border: 2px dashed rgb(248, 246, 246);
+}
+button:hover {
+    background-color: #ff7438; /* Valfri hover-färg, t.ex. grön */
+    color: white;
+    cursor: pointer;
+}
+section {
+    margin: 20px;
+    padding: 20px;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%; /* Eller: repeat(3, 1fr); */
+    grid-gap: 20px;
+}
+
+#burgers div div {
+    padding: 15px;
+}
+
+#contact {
+    border: 2px dashed black;
+}
+
+button {
+    margin: 20px;
+}
 p {
-    color: red;
+    color: rgb(190, 29, 29);
 }
 
 h1 {
     font-family: 'Agbalumo';
-    font-size: 36pt;
+    font-size: 46pt;
 }
 main, header, footer, nav ul {
-    max-width: 40rem;
+    max-width: 100%;
     margin: 0 auto 0 auto;
 }
 main {
@@ -27,18 +62,28 @@ main {
 } */
 
 header {
-    background-image: url("../img/polacks.jpg");
-    background-size: cover;
+    position: relative;
+    margin: 20px;
+    height: 250px; /* Bestämmer höjden på hela headern */
     overflow: hidden;
+}
+
+header img {
     width: 100%;
-    height: 200px;
-    opacity: 0.5;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
 }
 
 header h1 {
-    width:40rem;
-    margin: 0 auto;
+    position: absolute;
+    top: 50%; /* Flyttar ner rubriken till mitten */
+    left: 50%; /* Flyttar in rubriken till mitten */
+    transform: translate(-50%, -50%); /* Centrerar rubriken exakt både lodrätt och vågrätt */
+    width: 100%;
     text-align: center;
+    margin: 0;
+    color: rgb(255, 254, 254);
 }
 
 nav ul {

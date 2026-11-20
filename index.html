@@ -1,51 +1,55 @@
 <!DOCTYPE HTML>
 <html lang="en">
    <head>
-       <title>Page title shown in window title</title>
+       <title>Tildurs Burgir</title>
        <meta charset="utf-8"/>
+       <link rel="stylesheet" type="text/css" href="/css/style.css"/>   
    </head>
-   <body style="background-color: #ffc1dd;">
     <header>
         <h1>Välkommen till Tildurs Burgir</h1>
+        <img src="/img/restaurang.2.png" alt="Restaurangmiljö">
     </header>
-    <nav> Menu items </nav>
     <main>
-        <section>
+        <hr>
+        <section id ="burgers">
             <h2> Välj burgare</h2>
             <p>Välj burgare från menyn nedan</p>
-            <div style="display: inline-block; vertical-align: top; margin-right: 60px;">
-                <h3>Super smached burger</h3>
-                <img src="/img/smash-burger.jpg" alt="Super smached burger" style="width: 200px; height: 200px; object-fit: cover;">
-                <ul>
-                     <li> Smashed cheddar tryffel burger </li>
-                    <li>800 kcal</li>
-                    <li>Massa ost och laktos</li>
-                    <li>Innehåller gluten</li>
-                </ul>
-            </div>
+            <div class = "wrapper"> 
+                <div>
+                    <h3>Super smashed burger</h3>
+                    <img src="/img/smash-burger.jpg" alt="Super smached burger" style="width: 200px; height: 200px; object-fit: cover;">
+                    <ul>
+                        <li>Tryffel</li>
+                        <li>800 kcal</li>
+                        <li>Massa ost och <span class="allergen">laktos</span></li>
+                        <li>Innehåller <span class="allergen">gluten</span></li>
+                    </ul>
+                </div>
 
-            <div style="display: inline-block; vertical-align: top; margin-right: 60px;">
-                <h3>Vegan burgare</h3>
-                <img src="/img/vegan-burger.jpg" alt="Vegan burgare" style="width: 200px; height: 200px; object-fit: cover;">
-                <ul>
-                    <li>Vegansk hamburgare</li>
-                    <li>400 kcal</li>
-                    <li>Innehåller soja</li>
-                    <li>Innehåller gluten</li>
-                </ul>
-            </div>
+                <div>
+                    <h3>Vegan burgare</h3>
+                    <img src="/img/vegan-burger.jpg" alt="Vegan burgare" style="width: 200px; height: 200px; object-fit: cover;">
+                    <ul>
+                        <li>Vegansk hamburgare</li>
+                        <li>400 kcal</li>
+                        <li>Innehåller <span class="allergen">soja</span></li>
+                        <li>Innehåller <span class="allergen">gluten</span></li>
+                    </ul>
+                </div>
 
-            <div style="display: inline-block; vertical-align: top; margin-right: 60px;">
-                <h3>Tasty burger</h3>
-                <img src="/img/tasty-burger.jpg" alt="Tasty burger" style="width: 200px; height: 200px; object-fit: cover;">
-                <ul>
-                    <li>Vanlig hamburgare</li>
-                    <li>600 kcal</li>
-                    <li>Innehåller spår av kött</li>
-                    <li>Innehåller gluten</li>
-                </ul>
+                <div>
+                    <h3>Tasty burger</h3>
+                    <img src="/img/tasty-burger.jpg" alt="Tasty burger" style="width: 200px; height: 200px; object-fit: cover;">
+                    <ul>
+                        <li>Vanlig hamburgare</li>
+                        <li>600 kcal</li>
+                        <li>Innehåller spår av <span class="allergen">kött</span></li>
+                        <li>Innehåller <span class="allergen">gluten</span></li>
+                    </ul>
+                </div>
+            </div>
         </section>
-
+        <hr>
         <section id="contact">
             <h2> Kundinformation</h2>
             <p>Fyll i din form krävs för hemleverans nedan</p>
@@ -76,7 +80,7 @@
                     <select id="payment" name="pm">
                         <option value="swish" selected="selected">Swish</option>
                         <option value="card">Bankkort</option>
-                        <option value="klarna">Klarnas</option>
+                        <option value="klarna">Klarna</option>
                         <option value="applepay">Apple Pay</option>
                     </select>
                 </p>
